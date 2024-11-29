@@ -10,14 +10,7 @@ import Foundation
 struct TableUsers {
     let image: String
     let name: String
-    let someText: String?
-    
-    init(image: String, name: String, someText: String? = nil) {
-            self.image = image
-            self.name = name
-            self.someText = someText
-        }
-
+    var someText: String? = nil
 
     static func mockUsersData() -> [TableUsers] {
         [
